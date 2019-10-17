@@ -1,0 +1,435 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierto</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="icons/foundation-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+          <nav data-magellan>
+            <ul class="menu dropdown vertical" data-dropdown-menu>
+              <li class="menu-text">Navegación</li>
+              <li><a href="#tickets-container">Tickets</a></li>
+              <li>
+                <a href="#lineup-container">LineUp</a>
+                <ul class="menu vertical menu-off">
+                  <li><a data-toggle-dia="#panel-viernes" href="#lineup-container">Viernes</a></li>
+                  <li><a data-toggle-dia="#panel-sabado" href="#lineup-container">Sabado</a></li>
+                  <li><a data-toggle-dia="#panel-domingo" href="#lineup-container">Domingo</a></li>
+                </ul>
+              </li>
+              <li><a href="#info-container">Info</a></li>
+              <li><a href="#suscribete-container">Suscribete</a></li>
+            </ul>
+          </nav>
+        </div>  
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- Social -->
+            <section id="social-container">
+              <div class="grid-x align-center text-center">
+                <div class="column small-1">
+                  <a href="#" target="-blank">
+                    <i class="fi-social-facebook"></i>
+                  </a>
+                </div>
+                <div class="column small-1">
+                  <a href="#" target="-blank">
+                    <i class="fi-social-twitter"></i>
+                  </a>
+                </div>
+                <div class="column small-1">
+                  <a href="#" target="-blank">
+                    <i class="fi-social-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </section>  
+            <!-- /Social -->
+
+            <!-- Logo -->
+            <section id="logo-container">
+              <div class="callout text-center">
+                <h1>Concierto</h1>
+              </div>
+            </section> 
+            <!-- /Logo -->
+
+            <!-- Menu -->
+            <section id="menu-sticky" data-sticky-container>
+              <div class="data-sticky" id="sticky" data-sticky data-options="marginTop: 0;" data-sticky-on="small" data-top-anchor="menu-sticky">
+                <nav id="menu-container" data-magellan>
+                  <ul class="menu align-spaced show-for-small-only">
+                    <li ><a href="#" data-toggle="offCanvas">Menu</a></li>
+                  </ul>
+                  <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                    <li class="menu-text">Navegación</li>
+                    <li><a href="#tickets-container">Tickets</a></li>
+                    <li>
+                      <a href="#lineup-container">LineUp</a>
+                      <ul id="submenu-container" class="menu vertical">
+                        <li><a data-toggle-dia="#panel-viernes" href="#lineup-container">Viernes</a></li>
+                        <li><a data-toggle-dia="#panel-sabado" href="#lineup-container">Sabado</a></li>
+                        <li><a data-toggle-dia="#panel-domingo" href="#lineup-container">Domingo</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#info-container">Info</a></li>
+                    <li><a href="#suscribete-container">Suscribete</a></li>
+                  </ul>
+                </nav>
+              </div>     
+            </section>
+            <!-- /Menu -->
+
+            <!-- Tickets -->
+            <section id="tickets-action">
+              <div class="callout large text-center">
+                <a href="#">
+                  <button class="button large hollow success">Comprar boletos</button>
+                </a>
+              </div>
+            </section>
+            <!-- /Tickets -->
+
+            <!-- Lineup -->
+            <section id="lineup-container" data-magellan-target="lineup-container">
+              <h3 class="text-center">Lineup</h3>
+              <ul class="tabs text-center" data-tabs id="lineup-tabs">
+                <li class="tabs-title is-active">
+                  <a href="#panel-viernes">Viernes</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#panel-sabado">Sabado</a>
+                </li>
+                <li class="tabs-title">
+                  <a href="#panel-domingo">Domingo</a>
+                </li>
+              </ul>
+              <div class="tabs-content" data-tabs-content="lineup-tabs">
+                <div class="tabs-panel is-active" id="panel-viernes">
+                  <div class="grid-x align-spaced">
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://www.rockandpop.cl/wp-content/uploads/2018/05/ac20-gunsnroses1987-1024x575.jpg">
+                              <figcaption class="orbit-caption text-right">GUNS N´ ROSES</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://www.rockandpop.cl/wp-content/uploads/2018/05/ac20-gunsnroses1987-1024x575.jpg" alt="Space">
+                              <figcaption class="orbit-caption">GUNS N´ ROSES</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://www.rockandpop.cl/wp-content/uploads/2018/05/ac20-gunsnroses1987-1024x575.jpg" alt="Space">
+                              <figcaption class="orbit-caption text-right">GUNS N´ ROSES</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://www.rockandpop.cl/wp-content/uploads/2018/05/ac20-gunsnroses1987-1024x575.jpg" alt="Space">
+                              <figcaption class="orbit-caption">GUNS N´ ROSES</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://www.rockandpop.cl/wp-content/uploads/2018/05/ac20-gunsnroses1987-1024x575.jpg" alt="Space">
+                              <figcaption class="orbit-caption text-right">GUNS N´ ROSES</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://www.rockandpop.cl/wp-content/uploads/2018/05/ac20-gunsnroses1987-1024x575.jpg" alt="Space">
+                              <figcaption class="orbit-caption">GUNS N´ ROSES</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="panel-sabado">
+                  <div class="grid-x align-spaced">
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="http://img.rtve.es/imagenes/album-blanco-the-beatles-cumple-50-anos/1541853791856.jpg" alt="Space">
+                              <figcaption class="orbit-caption text-right">The Beatles</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="http://img.rtve.es/imagenes/album-blanco-the-beatles-cumple-50-anos/1541853791856.jpg" alt="Space">
+                              <figcaption class="orbit-caption">The Beatles</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="http://img.rtve.es/imagenes/album-blanco-the-beatles-cumple-50-anos/1541853791856.jpg" alt="Space">
+                              <figcaption class="orbit-caption text-right">The Beatles</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="http://img.rtve.es/imagenes/album-blanco-the-beatles-cumple-50-anos/1541853791856.jpg" alt="Space">
+                              <figcaption class="orbit-caption">The Beatles</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="http://img.rtve.es/imagenes/album-blanco-the-beatles-cumple-50-anos/1541853791856.jpg" alt="Space">
+                              <figcaption class="orbit-caption text-right">The Beatles</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="http://img.rtve.es/imagenes/album-blanco-the-beatles-cumple-50-anos/1541853791856.jpg" alt="Space">
+                              <figcaption class="orbit-caption">The Beatles</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-panel" id="panel-domingo">
+                  <div class="grid-x align-spaced">
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/04/01/58df4179030e2.jpeg" alt="Space">
+                              <figcaption class="orbit-caption text-right">Porta</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/04/01/58df4179030e2.jpeg" alt="Space">
+                              <figcaption class="orbit-caption">Porta</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/04/01/58df4179030e2.jpeg" alt="Space">
+                              <figcaption class="orbit-caption text-right">Porta</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/04/01/58df4179030e2.jpeg" alt="Space">
+                              <figcaption class="orbit-caption">Porta</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/04/01/58df4179030e2.jpeg" alt="Space">
+                              <figcaption class="orbit-caption text-right">Porta</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="column small-12 medium-5">
+                      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div data-orbit-slide="headline-1">
+                            <div class="orbit-slide">
+                              <img class="orbit-image" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/04/01/58df4179030e2.jpeg" alt="Space">
+                              <figcaption class="orbit-caption">Porta</figcaption>
+                            </div>  
+                          </div>  
+                        </div>
+                      </div>   
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </section>
+            <!-- /Lineup -->
+
+            <!-- Compra de boletos -->
+            <section id="tickets-container" data-magellan-target="tickets-container">
+              <h3 class="text-center">Comprar boletos</h3>
+              <div class="grid-x align-center">
+                <div class="column small-10 medium-6">
+                  <ul class="pricing-table">
+                    <li class="title">Platino</li>
+                    <li class="price">$120</li>
+                    <li class="description">Acceso viernes, sábado y domingo</li>
+                    <li>Acceso a todos los escenarioss</li>
+                    <li>2 consumiciones de bebida por cada día</li>
+                    <li>Parqueadero incluido todos los días</li>
+                    <li>Participa de un sorteo para acceder al backstage</li>
+                    <li><a class="button" href="#">Comprar platino</a></li>
+                  </ul>          
+                </div>
+              </div>  
+              <div class="grid-x align-spaced" data-equalizer data-equalize-on="small">
+                <div class="column small-5">
+                  <ul class="pricing-table">
+                    <li class="title">Gold</li>
+                    <li class="price">$90</li>
+                    <li class="description">Acceso viernes, sábado y domingo</li>
+                    <li>Acceso a todos los escenarioss</li>
+                    <li data-equalizer-watch>1 consumiciones de bebida por cada día</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li><a class="button" href="#">Comprar platino</a></li>
+                  </ul> 
+                </div>
+                <div class="column small-5">
+                  <ul class="pricing-table">
+                    <li class="title">Silver</li>
+                    <li class="price">$65</li>
+                    <li class="description">Acceso viernes, sábado y domingo</li>
+                    <li>Acceso a todos los escenarioss</li>
+                    <li data-equalizer-watch>-</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li><a class="button" href="#">Comprar platino</a></li>
+                  </ul> 
+                </div>
+              </div>
+            </section>
+            <!-- /Compra de boletos -->
+
+            <!-- Subscripción -->
+            <section id="suscribete-container" data-magellan-target="suscribete-container">
+              <h3 class="text-center">Suscribete</h3>
+              <h4 class="text-center"><small>Y recibe las ultimas novedades del concierto</small></h4>
+              <form action="" method="POST" novalidate data-abide>
+                  <div data-abide-error class="grid-x columns align-center text-center" style="display: none">
+                    <p><i class="fi-alert"></i> Ingreso un correo electronico no valido</p>
+                  </div>  
+                <div class="grid-x columns align-center">
+                  <div class="input-group columns small-10 medium-6">
+                    <span class="input-group-label ">
+                      <i class="fi-mail"></i>
+                    </span>
+                    <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com" required>
+                    <div class="input-group-button">
+                      <input type="submit" class="button" value="Suscribirse!"> 
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <!-- /Subscripción -->
+
+            <!-- Info -->
+            <section id="info-container" data-magellan-target="info-container">
+              <h3 class="text-center">Información</h3>
+              <!-- <div class="info-mapa" data-interchange="[html/mapa-small.html, small],[html/mapa.html, medium]"></div> -->
+              <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10874.84537421122!2d-77.08127397001023!3d-12.059251459891518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c946f6e1f7ff%3A0xa8e93cc8166b9089!2sEstadio+Ol%C3%ADmpico+de+la+San+Marcos!5e0!3m2!1ses-419!2spe!4v1552008973986" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+            <!-- /Info -->
+        </div>
+      </div>
+    </div> 
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
